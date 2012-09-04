@@ -1,0 +1,458 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CEC6675415F6BAF8000B5AC5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC6675315F6BAF8000B5AC5 /* Cocoa.framework */; };
+		CEC6675E15F6BAF8000B5AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC6675C15F6BAF8000B5AC5 /* InfoPlist.strings */; };
+		CEC6676015F6BAF8000B5AC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC6675F15F6BAF8000B5AC5 /* main.m */; };
+		CEC6676415F6BAF8000B5AC5 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CEC6676215F6BAF8000B5AC5 /* Credits.rtf */; };
+		CEC6676715F6BAF8000B5AC5 /* FSBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC6676615F6BAF8000B5AC5 /* FSBAppDelegate.m */; };
+		CEC6676A15F6BAF8000B5AC5 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEC6676815F6BAF8000B5AC5 /* MainMenu.xib */; };
+		CEC6677215F6BAF8000B5AC5 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC6677115F6BAF8000B5AC5 /* SenTestingKit.framework */; };
+		CEC6677315F6BAF8000B5AC5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC6675315F6BAF8000B5AC5 /* Cocoa.framework */; };
+		CEC6677B15F6BAF8000B5AC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CEC6677915F6BAF8000B5AC5 /* InfoPlist.strings */; };
+		CEC6677E15F6BAF8000B5AC5 /* FullScreenBrowserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CEC6677D15F6BAF8000B5AC5 /* FullScreenBrowserTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CEC6677415F6BAF8000B5AC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CEC6674615F6BAF8000B5AC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEC6674E15F6BAF8000B5AC5;
+			remoteInfo = FullScreenBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CEC6674F15F6BAF8000B5AC5 /* FullScreenBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullScreenBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC6675315F6BAF8000B5AC5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CEC6675615F6BAF8000B5AC5 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CEC6675715F6BAF8000B5AC5 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CEC6675815F6BAF8000B5AC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CEC6675B15F6BAF8000B5AC5 /* FullScreenBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FullScreenBrowser-Info.plist"; sourceTree = "<group>"; };
+		CEC6675D15F6BAF8000B5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEC6675F15F6BAF8000B5AC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CEC6676115F6BAF8000B5AC5 /* FullScreenBrowser-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FullScreenBrowser-Prefix.pch"; sourceTree = "<group>"; };
+		CEC6676315F6BAF8000B5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CEC6676515F6BAF8000B5AC5 /* FSBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSBAppDelegate.h; sourceTree = "<group>"; };
+		CEC6676615F6BAF8000B5AC5 /* FSBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSBAppDelegate.m; sourceTree = "<group>"; };
+		CEC6676915F6BAF8000B5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CEC6677015F6BAF8000B5AC5 /* FullScreenBrowserTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullScreenBrowserTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEC6677115F6BAF8000B5AC5 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CEC6677815F6BAF8000B5AC5 /* FullScreenBrowserTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FullScreenBrowserTests-Info.plist"; sourceTree = "<group>"; };
+		CEC6677A15F6BAF8000B5AC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CEC6677C15F6BAF8000B5AC5 /* FullScreenBrowserTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FullScreenBrowserTests.h; sourceTree = "<group>"; };
+		CEC6677D15F6BAF8000B5AC5 /* FullScreenBrowserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FullScreenBrowserTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEC6674C15F6BAF8000B5AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6675415F6BAF8000B5AC5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC6676C15F6BAF8000B5AC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6677215F6BAF8000B5AC5 /* SenTestingKit.framework in Frameworks */,
+				CEC6677315F6BAF8000B5AC5 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CEC6674415F6BAF8000B5AC5 = {
+			isa = PBXGroup;
+			children = (
+				CEC6675915F6BAF8000B5AC5 /* FullScreenBrowser */,
+				CEC6677615F6BAF8000B5AC5 /* FullScreenBrowserTests */,
+				CEC6675215F6BAF8000B5AC5 /* Frameworks */,
+				CEC6675015F6BAF8000B5AC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CEC6675015F6BAF8000B5AC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6674F15F6BAF8000B5AC5 /* FullScreenBrowser.app */,
+				CEC6677015F6BAF8000B5AC5 /* FullScreenBrowserTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEC6675215F6BAF8000B5AC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6675315F6BAF8000B5AC5 /* Cocoa.framework */,
+				CEC6677115F6BAF8000B5AC5 /* SenTestingKit.framework */,
+				CEC6675515F6BAF8000B5AC5 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CEC6675515F6BAF8000B5AC5 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6675615F6BAF8000B5AC5 /* AppKit.framework */,
+				CEC6675715F6BAF8000B5AC5 /* CoreData.framework */,
+				CEC6675815F6BAF8000B5AC5 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CEC6675915F6BAF8000B5AC5 /* FullScreenBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6676515F6BAF8000B5AC5 /* FSBAppDelegate.h */,
+				CEC6676615F6BAF8000B5AC5 /* FSBAppDelegate.m */,
+				CEC6676815F6BAF8000B5AC5 /* MainMenu.xib */,
+				CEC6675A15F6BAF8000B5AC5 /* Supporting Files */,
+			);
+			path = FullScreenBrowser;
+			sourceTree = "<group>";
+		};
+		CEC6675A15F6BAF8000B5AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6675B15F6BAF8000B5AC5 /* FullScreenBrowser-Info.plist */,
+				CEC6675C15F6BAF8000B5AC5 /* InfoPlist.strings */,
+				CEC6675F15F6BAF8000B5AC5 /* main.m */,
+				CEC6676115F6BAF8000B5AC5 /* FullScreenBrowser-Prefix.pch */,
+				CEC6676215F6BAF8000B5AC5 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CEC6677615F6BAF8000B5AC5 /* FullScreenBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6677C15F6BAF8000B5AC5 /* FullScreenBrowserTests.h */,
+				CEC6677D15F6BAF8000B5AC5 /* FullScreenBrowserTests.m */,
+				CEC6677715F6BAF8000B5AC5 /* Supporting Files */,
+			);
+			path = FullScreenBrowserTests;
+			sourceTree = "<group>";
+		};
+		CEC6677715F6BAF8000B5AC5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CEC6677815F6BAF8000B5AC5 /* FullScreenBrowserTests-Info.plist */,
+				CEC6677915F6BAF8000B5AC5 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEC6674E15F6BAF8000B5AC5 /* FullScreenBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC6678115F6BAF8000B5AC5 /* Build configuration list for PBXNativeTarget "FullScreenBrowser" */;
+			buildPhases = (
+				CEC6674B15F6BAF8000B5AC5 /* Sources */,
+				CEC6674C15F6BAF8000B5AC5 /* Frameworks */,
+				CEC6674D15F6BAF8000B5AC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FullScreenBrowser;
+			productName = FullScreenBrowser;
+			productReference = CEC6674F15F6BAF8000B5AC5 /* FullScreenBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CEC6676F15F6BAF8000B5AC5 /* FullScreenBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEC6678415F6BAF8000B5AC5 /* Build configuration list for PBXNativeTarget "FullScreenBrowserTests" */;
+			buildPhases = (
+				CEC6676B15F6BAF8000B5AC5 /* Sources */,
+				CEC6676C15F6BAF8000B5AC5 /* Frameworks */,
+				CEC6676D15F6BAF8000B5AC5 /* Resources */,
+				CEC6676E15F6BAF8000B5AC5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CEC6677515F6BAF8000B5AC5 /* PBXTargetDependency */,
+			);
+			name = FullScreenBrowserTests;
+			productName = FullScreenBrowserTests;
+			productReference = CEC6677015F6BAF8000B5AC5 /* FullScreenBrowserTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEC6674615F6BAF8000B5AC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FSB;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = WillCall;
+			};
+			buildConfigurationList = CEC6674915F6BAF8000B5AC5 /* Build configuration list for PBXProject "FullScreenBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CEC6674415F6BAF8000B5AC5;
+			productRefGroup = CEC6675015F6BAF8000B5AC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEC6674E15F6BAF8000B5AC5 /* FullScreenBrowser */,
+				CEC6676F15F6BAF8000B5AC5 /* FullScreenBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEC6674D15F6BAF8000B5AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6675E15F6BAF8000B5AC5 /* InfoPlist.strings in Resources */,
+				CEC6676415F6BAF8000B5AC5 /* Credits.rtf in Resources */,
+				CEC6676A15F6BAF8000B5AC5 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC6676D15F6BAF8000B5AC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6677B15F6BAF8000B5AC5 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CEC6676E15F6BAF8000B5AC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEC6674B15F6BAF8000B5AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6676015F6BAF8000B5AC5 /* main.m in Sources */,
+				CEC6676715F6BAF8000B5AC5 /* FSBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CEC6676B15F6BAF8000B5AC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEC6677E15F6BAF8000B5AC5 /* FullScreenBrowserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CEC6677515F6BAF8000B5AC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CEC6674E15F6BAF8000B5AC5 /* FullScreenBrowser */;
+			targetProxy = CEC6677415F6BAF8000B5AC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CEC6675C15F6BAF8000B5AC5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC6675D15F6BAF8000B5AC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CEC6676215F6BAF8000B5AC5 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC6676315F6BAF8000B5AC5 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CEC6676815F6BAF8000B5AC5 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC6676915F6BAF8000B5AC5 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CEC6677915F6BAF8000B5AC5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEC6677A15F6BAF8000B5AC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEC6677F15F6BAF8000B5AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CEC6678015F6BAF8000B5AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CEC6678215F6BAF8000B5AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FullScreenBrowser/FullScreenBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FullScreenBrowser/FullScreenBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CEC6678315F6BAF8000B5AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FullScreenBrowser/FullScreenBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FullScreenBrowser/FullScreenBrowser-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CEC6678515F6BAF8000B5AC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FullScreenBrowser.app/Contents/MacOS/FullScreenBrowser";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FullScreenBrowser/FullScreenBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FullScreenBrowserTests/FullScreenBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CEC6678615F6BAF8000B5AC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FullScreenBrowser.app/Contents/MacOS/FullScreenBrowser";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FullScreenBrowser/FullScreenBrowser-Prefix.pch";
+				INFOPLIST_FILE = "FullScreenBrowserTests/FullScreenBrowserTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEC6674915F6BAF8000B5AC5 /* Build configuration list for PBXProject "FullScreenBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC6677F15F6BAF8000B5AC5 /* Debug */,
+				CEC6678015F6BAF8000B5AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEC6678115F6BAF8000B5AC5 /* Build configuration list for PBXNativeTarget "FullScreenBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC6678215F6BAF8000B5AC5 /* Debug */,
+				CEC6678315F6BAF8000B5AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CEC6678415F6BAF8000B5AC5 /* Build configuration list for PBXNativeTarget "FullScreenBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEC6678515F6BAF8000B5AC5 /* Debug */,
+				CEC6678615F6BAF8000B5AC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CEC6674615F6BAF8000B5AC5 /* Project object */;
+}
