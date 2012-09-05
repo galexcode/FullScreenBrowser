@@ -23,23 +23,13 @@
         [self.windowControllers addObject:windowController];
 
         [windowController.window setFrame:screen.frame display:YES];
-        [windowController.window setLevel:NSScreenSaverWindowLevel];
+        [windowController.window setLevel:NSNormalWindowLevel];
         
         [[windowController window] makeKeyAndOrderFront:NSApp];
     }
     NSLog(@"Set up %li windows for %li screens", self.windowControllers.count, [NSScreen screens].count);
-    [[NSTimer scheduledTimerWithTimeInterval:3 target:self selector:@selector(checkMouseIdleTime:) userInfo:nil repeats:YES] fire];
 }
 
-
-- (void)checkMouseIdleTime:(NSTimer*)aNotification
-{
-    CFTimeInterval mouseIdleTime = CGEventSourceSecondsSinceLastEventType(kCGEventSourceStateCombinedSessionState, kCGEventMouseMoved);
-    if (mouseIdleTime >= 3)
-    {
-        [NSCursor setHiddenUntilMouseMoves:YES];
-    }
-}
 
 - (NSMutableArray*)windowControllers {
     if (_windowControllers) {
@@ -57,48 +47,25 @@
     while ((screen = [screenEnum nextObject]) && !NSMouseInRect(mouseLoc, [screen frame], NO));
 
     NSInteger screenIndex = [[NSScreen screens] indexOfObject:screen];
+    NSLog(@"Getting controller at index %li", screenIndex);
     FSBWindowController *destinationController = (FSBWindowController*)[self.windowControllers objectAtIndex:screenIndex];
-
-    if (destinationController == nil) {
-        NSLog(@"No controller found");
-    }
 
     return destinationController;
 }
 
 - (IBAction)setActiveURL:(id)sender {
     FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController setURLUnderMouse];
+    [destinationController setURL];
 }
 
 - (IBAction)splitHorizontally:(id)sender {
     FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController splitWebViewUnderMouseVertically:FALSE];
+    [destinationController splitViewVertically:FALSE];
 }
 
 - (IBAction)splitVertically:(id)sender {
     FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController splitWebViewUnderMouseVertically:TRUE];
-}
-
-- (IBAction)refreshBrowser:(id)sender {
-    FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController refreshBrowserAtMouse];
-}
-
-- (IBAction)deleteBrowser:(id)sender {
-    FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController deleteBrowserAtMouse];
-}
-
-- (IBAction)makeTextLarger:(id)sender {
-    FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController makeTextLargerAtMouse];
-}
-
-- (IBAction)makeTextSmaller:(id)sender {
-    FSBWindowController *destinationController = [self controllerForCurrentMouse];
-    [destinationController makeTextSmallerAtMouse];
+    [destinationController splitViewVertically:TRUE];
 }
 
 

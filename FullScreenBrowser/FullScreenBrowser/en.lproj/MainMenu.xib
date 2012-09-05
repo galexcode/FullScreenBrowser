@@ -161,7 +161,7 @@
 						<object class="NSMenu" key="NSSubmenu" id="720053764">
 							<string key="NSTitle">File</string>
 							<array class="NSMutableArray" key="NSMenuItems">
-								<object class="NSMenuItem" id="304524232">
+								<object class="NSMenuItem" id="36242330">
 									<reference key="NSMenu" ref="720053764"/>
 									<string key="NSTitle">Set URL for active browser</string>
 									<string key="NSKeyEquiv">l</string>
@@ -181,66 +181,19 @@
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="801305919">
-									<reference key="NSMenu" ref="720053764"/>
-									<string key="NSTitle">Refresh Browser</string>
-									<string key="NSKeyEquiv">r</string>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="303278821">
-									<reference key="NSMenu" ref="720053764"/>
-									<string key="NSTitle">Delete Browser</string>
-									<string key="NSKeyEquiv">d</string>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="189993020">
-									<reference key="NSMenu" ref="720053764"/>
-									<string key="NSTitle">Make Text Larger</string>
-									<string key="NSKeyEquiv">=</string>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="627339274">
-									<reference key="NSMenu" ref="720053764"/>
-									<string key="NSTitle">Make Text Smaller</string>
-									<string key="NSKeyEquiv">-</string>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="893502937">
-									<reference key="NSMenu" ref="720053764"/>
-									<bool key="NSIsDisabled">YES</bool>
-									<bool key="NSIsSeparator">YES</bool>
-									<string key="NSTitle"/>
-									<string key="NSKeyEquiv"/>
-									<int key="NSKeyEquivModMask">1048576</int>
-									<int key="NSMnemonicLoc">2147483647</int>
-									<reference key="NSOnImage" ref="35465992"/>
-									<reference key="NSMixedImage" ref="502551668"/>
-								</object>
-								<object class="NSMenuItem" id="89111081">
+								<object class="NSMenuItem" id="401757323">
 									<reference key="NSMenu" ref="720053764"/>
 									<string key="NSTitle">Split Browser Horizontally</string>
-									<string key="NSKeyEquiv">s</string>
+									<string key="NSKeyEquiv">b</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
 									<reference key="NSMixedImage" ref="502551668"/>
 								</object>
-								<object class="NSMenuItem" id="274579111">
+								<object class="NSMenuItem" id="416318115">
 									<reference key="NSMenu" ref="720053764"/>
 									<string key="NSTitle">Split Browser Vertically</string>
-									<string key="NSKeyEquiv">a</string>
+									<string key="NSKeyEquiv">v</string>
 									<int key="NSKeyEquivModMask">1048576</int>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -345,7 +298,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">setActiveURL:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="304524232"/>
+						<reference key="destination" ref="36242330"/>
 					</object>
 					<int key="connectionID">560</int>
 				</object>
@@ -353,7 +306,7 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">splitHorizontally:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="89111081"/>
+						<reference key="destination" ref="401757323"/>
 					</object>
 					<int key="connectionID">568</int>
 				</object>
@@ -361,41 +314,9 @@
 					<object class="IBActionConnection" key="connection">
 						<string key="label">splitVertically:</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="274579111"/>
+						<reference key="destination" ref="416318115"/>
 					</object>
 					<int key="connectionID">569</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">refreshBrowser:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="801305919"/>
-					</object>
-					<int key="connectionID">571</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">deleteBrowser:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="303278821"/>
-					</object>
-					<int key="connectionID">573</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">makeTextLarger:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="189993020"/>
-					</object>
-					<int key="connectionID">577</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">makeTextSmaller:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="627339274"/>
-					</object>
-					<int key="connectionID">579</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -454,15 +375,10 @@
 						<int key="objectID">81</int>
 						<reference key="object" ref="720053764"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="304524232"/>
-							<reference ref="89111081"/>
-							<reference ref="274579111"/>
+							<reference ref="36242330"/>
+							<reference ref="401757323"/>
+							<reference ref="416318115"/>
 							<reference ref="425164168"/>
-							<reference ref="801305919"/>
-							<reference ref="303278821"/>
-							<reference ref="893502937"/>
-							<reference ref="189993020"/>
-							<reference ref="627339274"/>
 						</array>
 						<reference key="parent" ref="379814623"/>
 					</object>
@@ -568,47 +484,22 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">559</int>
-						<reference key="object" ref="304524232"/>
+						<reference key="object" ref="36242330"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">562</int>
-						<reference key="object" ref="89111081"/>
+						<reference key="object" ref="401757323"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">563</int>
-						<reference key="object" ref="274579111"/>
+						<reference key="object" ref="416318115"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">565</int>
 						<reference key="object" ref="425164168"/>
-						<reference key="parent" ref="720053764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">570</int>
-						<reference key="object" ref="801305919"/>
-						<reference key="parent" ref="720053764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">572</int>
-						<reference key="object" ref="303278821"/>
-						<reference key="parent" ref="720053764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">574</int>
-						<reference key="object" ref="893502937"/>
-						<reference key="parent" ref="720053764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">575</int>
-						<reference key="object" ref="189993020"/>
-						<reference key="parent" ref="720053764"/>
-					</object>
-					<object class="IBObjectRecord">
-						<int key="objectID">576</int>
-						<reference key="object" ref="627339274"/>
 						<reference key="parent" ref="720053764"/>
 					</object>
 				</array>
@@ -638,11 +529,6 @@
 				<string key="563.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="565.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="57.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="570.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="572.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="574.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="575.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="576.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="58.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="81.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="83.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -651,7 +537,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">579</int>
+			<int key="maxID">569</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -659,31 +545,11 @@
 					<string key="className">FSBAppDelegate</string>
 					<string key="superclassName">NSObject</string>
 					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="deleteBrowser:">id</string>
-						<string key="makeTextLarger:">id</string>
-						<string key="makeTextSmaller:">id</string>
-						<string key="refreshBrowser:">id</string>
 						<string key="setActiveURL:">id</string>
 						<string key="splitHorizontally:">id</string>
 						<string key="splitVertically:">id</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="deleteBrowser:">
-							<string key="name">deleteBrowser:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="makeTextLarger:">
-							<string key="name">makeTextLarger:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="makeTextSmaller:">
-							<string key="name">makeTextSmaller:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="refreshBrowser:">
-							<string key="name">refreshBrowser:</string>
-							<string key="candidateClassName">id</string>
-						</object>
 						<object class="IBActionInfo" key="setActiveURL:">
 							<string key="name">setActiveURL:</string>
 							<string key="candidateClassName">id</string>

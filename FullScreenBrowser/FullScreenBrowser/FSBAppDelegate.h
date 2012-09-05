@@ -16,9 +16,5 @@
 - (IBAction)setActiveURL:(id)sender;
 - (IBAction)splitHorizontally:(id)sender;
 - (IBAction)splitVertically:(id)sender;
-- (IBAction)refreshBrowser:(id)sender;
-- (IBAction)deleteBrowser:(id)sender;
-- (IBAction)makeTextLarger:(id)sender;
-- (IBAction)makeTextSmaller:(id)sender;
 
 @end
